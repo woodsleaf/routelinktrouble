@@ -7,6 +7,7 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^9.6.1",
+    "lint-staged": "^9.2.5",
     "parcel-bundler": "^1.12.3",
     "postcss-modules": "^1.4.1",
     "posthtml-img-autosize": "^0.1.4",
@@ -19,5 +20,8 @@
     "start": "parcel index.html",
     "watch": "parcel watch index.html",
     "build": "parcel build entry.js"
-  }
+  },
+  "lint-staged": {
+    "*.(js|jsx)": ["npm run lint:write", "git add"]
+ }
 }
