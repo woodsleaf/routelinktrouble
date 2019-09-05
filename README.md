@@ -1,4 +1,5 @@
 # parcelpack
+
 Go to root project and execute them:
 
 `npm install -G yarn`  
@@ -8,29 +9,32 @@ OR
 `npm install -g parcel-bundler`  
 `npm init -y`  
 
-Далее создайте файлы `index.html` и `index.js`.
+Уже создан index.html.
+~~Далее создайте файлы `index.html` и `index.js`.~~
 
 ## Продакшен
+
 `npm build`  
  or  
 `parcel build entry.js`
 
-## Запустите в режиме watch если у вас есть собственный сервер.
+## Запустите в режиме watch если у вас есть собственный сервер
+
 `npm watch`  
 or  
 `parcel watch index.html`
 
-## Запуск в режиме сервера:
+## Запуск в режиме сервера
+
 `npm start`  
 or  
 `parcel index.html`
 
 Зайдите в браузере на страницу: [http://localhost:1234/](http://localhost:1234/)
 
-
 ## [Рецепты](https://ru.parceljs.org/recipes.html)
 
-## Vue
+## Vue (Уже сделано пример для понимания)
 
 1. Сначала нам нужно установить зависимости для Vue.
 
@@ -46,7 +50,7 @@ or
 
 `// package.json`  
 `"scripts": {`  
-`  "start": "parcel index.html"`  
+  `"start": "parcel index.html"`  
 `}`  
 
 ## React
