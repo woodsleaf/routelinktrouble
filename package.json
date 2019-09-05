@@ -1,0 +1,23 @@
+{
+  "name": "gh.parcel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:woodsleaf/parcelpack.git",
+  "author": "woodsleaf <freepostpair@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "parcel-bundler": "^1.12.3",
+    "postcss-modules": "^1.4.1",
+    "posthtml-img-autosize": "^0.1.4",
+    "sass": "^1.23.0-module.beta.1"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "watch": "parcel watch index.html",
+    "build": "parcel build entry.js"
+  }
+}
