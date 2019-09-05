@@ -2485,6 +2485,11 @@ fill-range@^7.0.1:
   dependencies:
     to-regex-range "^5.0.1"
 
+flexbox@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/flexbox/-/flexbox-0.0.3.tgz#b4d03395734a19dba566ba02752c95b603c44cf7"
+  integrity sha1-tNAzlXNKGdulZroCdSyVtgPETPc=
+
 for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -4458,6 +4463,14 @@ postcss-modules@^1.4.1:
     postcss "^7.0.1"
     string-hash "^1.1.1"
 
+postcss-nested@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/postcss-nested/-/postcss-nested-4.1.2.tgz#8e0570f736bfb4be5136e31901bf2380b819a561"
+  integrity sha512-9bQFr2TezohU3KRSu9f6sfecXmf/x6RXDedl8CHF6fyuyVW7UqgNMRdWMHZQWuFY6Xqs2NYk+Fj4Z4vSOf7PQg==
+  dependencies:
+    postcss "^7.0.14"
+    postcss-selector-parser "^5.0.0"
+
 postcss-normalize-charset@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/postcss-normalize-charset/-/postcss-normalize-charset-4.0.1.tgz#8b35add3aee83a136b0471e0d59be58a50285dd4"
@@ -5904,6 +5917,11 @@ vue-hot-reload-api@^2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.3.tgz#2756f46cb3258054c5f4723de8ae7e87302a1ccf"
   integrity sha512-KmvZVtmM26BQOMK1rwUZsrqxEGeKiYSZGA7SNWE6uExx8UX/cj9hq2MRV/wWC3Cq6AoeDGk57rL9YMFRel/q+g==
+
+vue-json5-pretty@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/vue-json5-pretty/-/vue-json5-pretty-0.0.1.tgz#4b22d5f419a85a23a67c3ba17c5267087c33d9e4"
+  integrity sha1-SyLV9BmoWiOmfDuhfFJnCHwz2eQ=
 
 vue-template-compiler@^2.6.10:
   version "2.6.10"

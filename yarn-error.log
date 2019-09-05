@@ -1,5 +1,5 @@
 Arguments: 
-  D:\web\tools\node\10-16-0x64\node.exe D:\web\tools\yarn\bin\yarn.js add vue-template-compiler -D
+  D:\web\tools\node\10-16-0x64\node.exe D:\web\tools\yarn\bin\yarn.js add vue-router
 
 PATH: 
   D:\web\tools\node\10-16-0x64\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;D:\web\domains\gh.parcel\node_modules\.bin;D:\web\tools\python\2.7.13\;D:\web\tools\python\2.7.13\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\web\tools\yarn\bin\;C:\ProgramData\chocolatey\bin;C:\Users\imp\AppData\Local\Microsoft\WindowsApps;C:\Users\imp\AppData\Local\Programs\Microsoft VS Code\bin;D:\web\tools\php\php-7.2-x64;C:\Users\imp\AppData\Roaming\Composer\vendor\bin;D:\web\tools\node\10-16-0x64;C:\Users\imp\AppData\Roaming\Composer\vendor\bin;C:\Users\imp\AppData\Local\Yarn\bin
@@ -25,12 +25,16 @@ npm manifest:
     "author": "woodsleaf <freepostpair@gmail.com>",
     "license": "MIT",
     "devDependencies": {
+      "@vue/component-compiler-utils": "^3.0.0",
       "autoprefixer": "^9.6.1",
+      "flexbox": "^0.0.3",
       "lint-staged": "^9.2.5",
       "parcel-bundler": "^1.12.3",
       "postcss-modules": "^1.4.1",
+      "postcss-nested": "^4.1.2",
       "posthtml-img-autosize": "^0.1.4",
-      "sass": "^1.23.0-module.beta.1"
+      "sass": "^1.23.0-module.beta.1",
+      "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
       "vue": "^2.6.10",
@@ -877,6 +881,21 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
     integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
   
+  "@vue/component-compiler-utils@^3.0.0":
+    version "3.0.0"
+    resolved "https://registry.yarnpkg.com/@vue/component-compiler-utils/-/component-compiler-utils-3.0.0.tgz#d16fa26b836c06df5baaeb45f3d80afc47e35634"
+    integrity sha512-am+04/0UX7ektcmvhYmrf84BDVAD8afFOf4asZjN84q8xzxFclbk5x0MtxuKGfp+zjN5WWPJn3fjFAWtDdIGSw==
+    dependencies:
+      consolidate "^0.15.1"
+      hash-sum "^1.0.2"
+      lru-cache "^4.1.2"
+      merge-source-map "^1.1.0"
+      postcss "^7.0.14"
+      postcss-selector-parser "^5.0.0"
+      prettier "1.16.3"
+      source-map "~0.6.1"
+      vue-template-es2015-compiler "^1.9.0"
+  
   abab@^2.0.0:
     version "2.0.1"
     resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.1.tgz#3fa17797032b71410ec372e11668f4b4ffc86a82"
@@ -1198,6 +1217,11 @@ Lockfile:
     version "1.2.1"
     resolved "https://registry.yarnpkg.com/bindings/-/bindings-1.2.1.tgz#14ad6113812d2d37d72e67b4cacb4bb726505f11"
     integrity sha1-FK1hE4EtLTfXLme0ystLtyZQXxE=
+  
+  bluebird@^3.1.1:
+    version "3.5.5"
+    resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.5.tgz#a8d0afd73251effbbd5fe384a77d73003c17a71f"
+    integrity sha512-5am6HnnfN+urzt4yfg7IgTbotDjIT/u8AJpEt0sIU9FtXfVeezXAPKswrG+xKUCOYAINpSdgZVDU6QFh+cuH3w==
   
   bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
     version "4.11.8"
@@ -1645,6 +1669,13 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
     integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
   
+  consolidate@^0.15.1:
+    version "0.15.1"
+    resolved "https://registry.yarnpkg.com/consolidate/-/consolidate-0.15.1.tgz#21ab043235c71a07d45d9aad98593b0dba56bab7"
+    integrity sha512-DW46nrsMJgy9kqAbPt5rKaCr7uFtpo4mSUvLHIUbJEjm0vo+aY5QLwBUq3FK4tRnJr/X0Psc0C4jf/h+HtXSMw==
+    dependencies:
+      bluebird "^3.1.1"
+  
   constants-browserify@^1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/constants-browserify/-/constants-browserify-1.0.0.tgz#c20b96d8c617748aaf1c16021760cd27fcb8cb75"
@@ -1943,6 +1974,11 @@ Lockfile:
     version "0.1.4"
     resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
     integrity sha1-6vQ5/U1ISK105cx9vvIAZyueNFs=
+  
+  de-indent@^1.0.2:
+    version "1.0.2"
+    resolved "https://registry.yarnpkg.com/de-indent/-/de-indent-1.0.2.tgz#b2038e846dc33baa5796128d0804b455b8c1e21d"
+    integrity sha1-sgOOhG3DO6pXlhKNCAS0VbjB4h0=
   
   deasync@^0.1.14:
     version "0.1.15"
@@ -2508,6 +2544,11 @@ Lockfile:
     dependencies:
       to-regex-range "^5.0.1"
   
+  flexbox@^0.0.3:
+    version "0.0.3"
+    resolved "https://registry.yarnpkg.com/flexbox/-/flexbox-0.0.3.tgz#b4d03395734a19dba566ba02752c95b603c44cf7"
+    integrity sha1-tNAzlXNKGdulZroCdSyVtgPETPc=
+  
   for-in@^1.0.2:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -2774,6 +2815,11 @@ Lockfile:
       inherits "^2.0.1"
       safe-buffer "^5.0.1"
   
+  hash-sum@^1.0.2:
+    version "1.0.2"
+    resolved "https://registry.yarnpkg.com/hash-sum/-/hash-sum-1.0.2.tgz#33b40777754c6432573c120cc3808bbd10d47f04"
+    integrity sha1-M7QHd3VMZDJXPBIMw4CLvRDUfwQ=
+  
   hash.js@^1.0.0, hash.js@^1.0.3:
     version "1.1.7"
     resolved "https://registry.yarnpkg.com/hash.js/-/hash.js-1.1.7.tgz#0babca538e8d4ee4a0f8988d68866537a003cf42"
@@ -2781,6 +2827,11 @@ Lockfile:
     dependencies:
       inherits "^2.0.3"
       minimalistic-assert "^1.0.1"
+  
+  he@^1.1.0:
+    version "1.2.0"
+    resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
+    integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
   
   hex-color-regex@^1.1.0:
     version "1.1.0"
@@ -3560,7 +3611,7 @@ Lockfile:
     dependencies:
       js-tokens "^3.0.0 || ^4.0.0"
   
-  lru-cache@^4.1.5:
+  lru-cache@^4.1.2, lru-cache@^4.1.5:
     version "4.1.5"
     resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-4.1.5.tgz#8bbe50ea85bed59bc9e33dcab8235ee9bcf443cd"
     integrity sha512-sWZlbEP2OsHNkXrMl5GYk/jKk70MBng6UU4YI/qGDYbgf6YbP4EvmqISbXCoJiRKs+1bSpFHVgQxvJ17F2li5g==
@@ -3612,6 +3663,13 @@ Lockfile:
     integrity sha1-pd5GU42uhNQRTMXqArR3KmNGcB8=
     dependencies:
       source-map "^0.5.6"
+  
+  merge-source-map@^1.1.0:
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/merge-source-map/-/merge-source-map-1.1.0.tgz#2fdde7e6020939f70906a68f2d7ae685e4c8c646"
+    integrity sha512-Qkcp7P2ygktpMPh2mCQZaf3jhN6D3Z/qVZHSdWvQ+2Ef5HgRAPBO57A77+ENm0CPx2+1Ce/MYKi3ymqdfuqibw==
+    dependencies:
+      source-map "^0.6.1"
   
   merge-stream@^2.0.0:
     version "2.0.0"
@@ -4464,6 +4522,14 @@ Lockfile:
       postcss "^7.0.1"
       string-hash "^1.1.1"
   
+  postcss-nested@^4.1.2:
+    version "4.1.2"
+    resolved "https://registry.yarnpkg.com/postcss-nested/-/postcss-nested-4.1.2.tgz#8e0570f736bfb4be5136e31901bf2380b819a561"
+    integrity sha512-9bQFr2TezohU3KRSu9f6sfecXmf/x6RXDedl8CHF6fyuyVW7UqgNMRdWMHZQWuFY6Xqs2NYk+Fj4Z4vSOf7PQg==
+    dependencies:
+      postcss "^7.0.14"
+      postcss-selector-parser "^5.0.0"
+  
   postcss-normalize-charset@^4.0.1:
     version "4.0.1"
     resolved "https://registry.yarnpkg.com/postcss-normalize-charset/-/postcss-normalize-charset-4.0.1.tgz#8b35add3aee83a136b0471e0d59be58a50285dd4"
@@ -4592,7 +4658,7 @@ Lockfile:
       indexes-of "^1.0.1"
       uniq "^1.0.1"
   
-  postcss-selector-parser@^5.0.0-rc.4:
+  postcss-selector-parser@^5.0.0, postcss-selector-parser@^5.0.0-rc.4:
     version "5.0.0"
     resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-5.0.0.tgz#249044356697b33b64f1a8f7c80922dddee7195c"
     integrity sha512-w+zLE5Jhg6Liz8+rQOWEAwtwkyqpfnmsinXjXg6cY7YIONZZtgvE0v2O0uhQBs0peNomOJwWRKt6JBfTdTd3OQ==
@@ -4648,7 +4714,7 @@ Lockfile:
       source-map "^0.6.1"
       supports-color "^5.4.0"
   
-  postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.11, postcss@^7.0.17, postcss@^7.0.5:
+  postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.11, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.5:
     version "7.0.17"
     resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.17.tgz#4da1bdff5322d4a0acaab4d87f3e782436bad31f"
     integrity sha512-546ZowA+KZ3OasvQZHsbuEpysvwTZNGJv9EfyCQdsIDltPSWHAeTQ5fQy/Npi2ZDtLI3zs7Ps/p6wThErhm9fQ==
@@ -4689,6 +4755,11 @@ Lockfile:
     version "1.1.2"
     resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
     integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
+  
+  prettier@1.16.3:
+    version "1.16.3"
+    resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.16.3.tgz#8c62168453badef702f34b45b6ee899574a6a65d"
+    integrity sha512-kn/GU6SMRYPxUakNXhpP0EedT/KmaPzr0H5lIsDogrykbaxOpOfAFfk5XA7DZrJyMAv1wlMV3CPcZruGXVVUZw==
   
   private@^0.1.6:
     version "0.1.8"
@@ -5905,6 +5976,19 @@ Lockfile:
     version "2.3.3"
     resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.3.tgz#2756f46cb3258054c5f4723de8ae7e87302a1ccf"
     integrity sha512-KmvZVtmM26BQOMK1rwUZsrqxEGeKiYSZGA7SNWE6uExx8UX/cj9hq2MRV/wWC3Cq6AoeDGk57rL9YMFRel/q+g==
+  
+  vue-template-compiler@^2.6.10:
+    version "2.6.10"
+    resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.6.10.tgz#323b4f3495f04faa3503337a82f5d6507799c9cc"
+    integrity sha512-jVZkw4/I/HT5ZMvRnhv78okGusqe0+qH2A0Em0Cp8aq78+NK9TII263CDVz2QXZsIT+yyV/gZc/j/vlwa+Epyg==
+    dependencies:
+      de-indent "^1.0.2"
+      he "^1.1.0"
+  
+  vue-template-es2015-compiler@^1.9.0:
+    version "1.9.1"
+    resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
+    integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
   
   vue@^2.6.10:
     version "2.6.10"
