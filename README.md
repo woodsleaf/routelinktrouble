@@ -8,7 +8,7 @@ OR
 `npm install -g parcel-bundler`  
 `npm init -y`  
 
-Далее создайте файлы index.html и index.js.
+Далее создайте файлы `index.html` и `index.js`.
 
 ## Продакшен
 `npm build`  
