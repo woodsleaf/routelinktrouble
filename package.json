@@ -6,15 +6,18 @@
   "author": "woodsleaf <freepostpair@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@vue/component-compiler-utils": "^3.0.0",
     "autoprefixer": "^9.6.1",
     "lint-staged": "^9.2.5",
     "parcel-bundler": "^1.12.3",
     "postcss-modules": "^1.4.1",
     "posthtml-img-autosize": "^0.1.4",
-    "sass": "^1.23.0-module.beta.1"
+    "sass": "^1.23.0-module.beta.1",
+    "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.3"
   },
   "scripts": {
     "start": "parcel index.html",
@@ -22,6 +25,9 @@
     "build": "parcel build entry.js"
   },
   "lint-staged": {
-    "*.(js|jsx)": ["npm run lint:write", "git add"]
- }
+    "*.(js|jsx)": [
+      "npm run lint:write",
+      "git add"
+    ]
+  }
 }

@@ -69,4 +69,7 @@ or
 
 2. Как в примере с Vue.
 
-### [Источник](https://ru.parceljs.org/getting_started.html)
+### Литература `:)`
+
+[1](https://ru.parceljs.org/getting_started.html)
+[2](https://jonathanmh.com/using-vue-js-with-parcel-js-tutorial/?unapproved=656572&moderation-hash=f8050d6c158a440bbd6a7c929c428520#comment-656572)

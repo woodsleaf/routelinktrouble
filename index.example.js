@@ -30,3 +30,25 @@
     import 'babel-polyfill'
     import './app'
 */
+
+
+/*
+    <!-- production Vue.js
+    <script src="./node_modules/vue/dist/vue.min.js"></script> -->
+    <!-- Dev Vue.js
+    <script src="./node_modules/vue/dist/vue.js"></script> -->
+<!-- // this requires the compiler
+<script>
+        new Vue({
+  template: '<div>{{ hi }}</div>'
+})
+</script>
+-->
+
+<!-- // this does not
+new Vue({
+  render (h) {
+    return h('div', this.hi)
+  }
+}) -->
+*/
