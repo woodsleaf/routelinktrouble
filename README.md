@@ -1,5 +1,6 @@
 # parcelpack
 Go to root project and execute them:
+
 `npm install -G yarn`  
 `yarn global add parcel-bundler`  
 `yarn init -y`  
