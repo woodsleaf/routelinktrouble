@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-//import mi from './mi.js';
+//import {mi} from './mi.js'; //{mi}
 import Vue from 'vue';
 //import axios from 'axios';
 //import VueAxios from 'vue-axios';
@@ -11,10 +11,10 @@ Vue.use(Router);  // , Vuex, VueAxios, axios
 /*import Json5Pretty from 'vue-json5-pretty/src/index.vue';*/
 //import routes from './routes';
 //import routes from './routes.js';
-
+/*
 const mi = {
     'fullname': 'Виктория Миронова'
-};
+};*/
 //console.log(mi.fullname);
 
 import Hello from './components/Home';
@@ -75,7 +75,10 @@ const router = new Router({
 
 const app = new Vue({
 el: '#app',
+props: {
+},
 data: {
+
 },
 computed: {
 },
@@ -84,10 +87,13 @@ computed: {
 router,
 render: createElement => createElement(App, {}, router)
 }).$mount('#app');
-
-
+//console.log(mi.fullname);
+/*
 export default {
     mi,
     app,
     router
-}
+}*/
+//exports.mi = mi;
+exports.app = app;
+exports.router = router;

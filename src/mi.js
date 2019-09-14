@@ -1,6 +1,5 @@
 const mi = {
     'fullname': 'Виктория Миронова'
 };
-export default {
-    mi
-};
+// exports.mi = mi; //{mi};
+export {mi};
