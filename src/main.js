@@ -1,33 +1,37 @@
 /*jshint esversion: 6 */
-import Vue from 'vue'; // ./node_modules/vue/dist/vue.js
-
-import App from './App.vue';
-//import App from './Test.vue';
-
-new Vue({
-  render: h => h(App)
-}).$mount('#app');
-
-/*
+import Vue from 'vue';
+import App from './App';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
-import About from './views/About.vue';
-
 Vue.use(Router);
 
-export default new Router({
-  mode: 'history',
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: About
-    }
-  ]
-});
-*/
+/*import Json5Pretty from 'vue-json5-pretty/src/index.vue';*/
+//import routes from './routes';
+
+//import routes from './routes.js';
+
+import Hello from './components/Hello'
+import About from './components/About';
+const routes = [
+    {path: '/', component: Hello},
+    {path: '/about', component: About}
+];
+
+const router = new Router({
+    mode: 'history',
+    routes
+  })
+
+new Vue({
+  el: '#app',
+  data: {
+  },
+  computed: {
+  },
+  //template: '<App/>',
+  router,
+  render: createElement => createElement(App, {}, router)
+}).$mount('#app');
+
+export default {
+
+}
