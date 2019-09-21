@@ -1,28 +1,41 @@
 <template>
   <div id="home">
-    <img src="../images/8b45fbec-48fc-4dbb-8.png"><span>«Я благодарна каждому заказчику. Спасибо Вам за проявленный интерес и доверие!»</span>
-    <p>{{ 'Виктория Миронова' }}</p>
-    <p>Основатель и кондитер ABakery.ru<p>
+    <im></im>
+    <!-- <o-nas></o-nas> -->
+    <!-- <price></price> -->
+    <!-- <nachinki></nachinki> -->
+    <kak-oformit-zakaz></kak-oformit-zakaz>
   </div>
 </template>
 
 <script>
-//import {mi} from '../mi.js'; //{mi}
-//console.log(JSON.stringify(mi));
-//console.log(fullname)
-//app.fullname = mi.fullname;
+//import MyFancyComponent from './MyFancyComponent';
+// $dj.mypicture
+import Im from './Im';
+//import ONas from './ONas';
+//import Price from './Price';
+//import Nachinki from './Nachinki';
+import KakOformitZakaz from './KakOformitZakaz';
 export default {
-  name: 'home'
+    name: 'home',
+    components: {
+        Im,
+        KakOformitZakaz
+    }
 }
+//ONas,
+//Price,
+//Nachinki,
 </script>
-<!-- инкапсулированные стили компонента -->
+<!-- инкапсулированные стили компонента
+$data.mi.fullname + '1'
+$myGlobalStuff.message
+-->
 <style>
-#about {
+#home {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /*margin-top: 60px;*/
 }
 </style>

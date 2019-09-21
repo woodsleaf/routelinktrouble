@@ -7,6 +7,9 @@ public_html/media/*
 #игнорим img
 */devwp/src/images/*
 */devwp/dest/images/*
+images/*
+src/images/*
+
 #аналогично третьей строке
 !*/images/.gitignore
 #не хочу мусор копить в git

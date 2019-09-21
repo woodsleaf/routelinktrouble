@@ -1,0 +1,4 @@
+install
+yarn add -D node-sass
+js
+import “./sass/main.scss”
